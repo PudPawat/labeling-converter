@@ -15,6 +15,7 @@ lut["printed"]     =5
 lut["print"]     =5
 lut["bubble"]     =6
 lut[""]     =6
+lut["distort"]     =7
 
 # lut["AM"] =0
 # lut["blue_box"]       =1
@@ -85,7 +86,7 @@ def convert_xml2yolo( lut ,path = ""):
 
 
 def main():
-    convert_xml2yolo( lut ,"F:\Ph.D\contactlens\data\contactens\labels_updated/")
+    convert_xml2yolo( lut ,"F:\\Pawat\\Ph.D\\Projects\\contactlens\\ppoint0606\\train\\")
 
 
 if __name__ == '__main__':
