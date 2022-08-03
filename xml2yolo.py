@@ -5,27 +5,37 @@ import os
 import glob
 
 lut={}
-lut["ppoint"] = 0
-lut["ppointwwww"] = 0
-lut["burr"]       = 1
-lut["scratch"]    = 2
-lut["crack"]      =3
-lut["foreign"]    =4
-lut["printed"]     =5
-lut["print"]     =5
-lut["bubble"]     =6
-lut[""]     =6
-lut["distort"]     =7
+# lut["ppoint"] = 0
+# lut["ppointwwww"] = 0
+# lut["burr"]       = 1
+# lut["scratch"]    = 2
+# lut["crack"]      =3
+# lut["foreign"]    =4
+# lut["dust"]    =4
+# lut["dot"]    =4
+# lut["defect"]    =4
+# lut["defectww"]    =4
+# lut["printed"]     =5
+# lut["print"]     =5
+# lut["bubble"]     =6
+# lut[""]     =6
+# lut["distort"]     =7
+# lut["cloudy"]     =8
+# lut["blur"]     =8
 
-# lut["AM"] =0
-# lut["blue_box"]       =1
-# lut["jeunesse"]    =2
-# lut["N2"]       =3
-# lut["N4"]     =4
-# lut["PM"]     =5
-# lut["luminesce"]     =6
-# lut["W1"]     =7
-# lut["white_box"]     =8
+### only mirror
+lut["a"] =0
+lut["b"]       =1
+lut["scratch"]    =2
+lut["d"]       =3
+lut["dust"]     =4
+lut["defect"]     =4
+lut["defectww"]     =4
+lut["dot"]     =5
+lut["6"]     =6
+lut["W1"]     =7
+lut["blur"]     =8
+lut["cloudy"]     =8
 # lut["white_nv"]     =9
 # lut["purple_box"]     =10
 
@@ -86,7 +96,7 @@ def convert_xml2yolo( lut ,path = ""):
 
 
 def main():
-    convert_xml2yolo( lut ,"F:\\Pawat\\Ph.D\\Projects\\contactlens\\ppoint0606\\train\\")
+    convert_xml2yolo(lut ,"F:\Ph.D\mirror\data\\20220628\img_RGB\XML\\")
 
 
 if __name__ == '__main__':

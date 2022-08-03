@@ -6,8 +6,8 @@ from converters.labelme2voc import Converter2voc
 
 
 # Default args.
-INPUT_PATH = 'F:\Pawat\github\labeling-converter\labelme_converter\data\labelme'
-OUTPUT_PATH = 'out'
+INPUT_PATH = 'F:\Ph.D\mirror\data\ALL\labelme_format'
+OUTPUT_PATH = 'F:\\Ph.D\\mirror\\data\\ALL\\xml_format'
 FORMAT = 'voc'
 CREATE_MARKED = False
 POLYGONS = False
